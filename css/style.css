@@ -556,11 +556,12 @@ body {
     -ms-flex-negative: 0;
         flex-shrink: 0;
     margin: 0;
+    padding-right: 15px;
   }
   .footer .menu-wrap {
     -ms-flex: 1;
         flex: 1;
-    padding: 0 80px 0 30px;
+    padding: 0 80px 0 3\0px;
     margin: 0;
   }
   .footer .menu {
