@@ -6,7 +6,7 @@
   --clr-light: #838D8F;
   --clr-border: #838D8F;
   --min: 320px;
-  --max: 1300px;
+  --max: 1200px;
   --paddingContainer: 15px;
   font-size: 10px;
 }
@@ -178,8 +178,8 @@ h1.title-main,
 .h1-title.title-main,
 h1 .title-large,
 .h1-title .title-large {
-  font-size: 70px;
-  font-size: 7rem;
+  font-size: 60px;
+  font-size: 6rem;
   line-height: 1.14285714;
   font-weight: 500;
   display: block;
@@ -187,12 +187,11 @@ h1 .title-large,
 }
 h1 .title-large,
 .h1-title .title-large {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 h2,
 .h2-title {
-  font-size: 25px;
-  font-size: 2.5rem;
+  font-size: 24px;
   line-height: 1.33333333;
   margin-bottom: 1em;
   margin-top: 1.33333333em;
@@ -246,10 +245,6 @@ h3 {
   h1,
   .h1-title {
     font-size: 3.6rem;
-  }
-  h2,
-  .h2-title {
-    font-size: 2.4rem;
   }
   .h3-title,
   h3 {
@@ -675,7 +670,7 @@ body {
     display: none;
   }
 }
-@media (min-width: 1024px) and (max-width: 1299px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .popup-menu-wrap .contacts-wrap {
     margin-left: 30px;
   }
@@ -683,7 +678,7 @@ body {
     margin-left: 15px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1299px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
   .popup-menu-wrap .menu {
     padding-top: 0;
     -ms-flex-pack: center;
@@ -719,12 +714,12 @@ body {
   margin-top: 0;
 }
 .item-tile-icon .tile-ico {
-  width: 230px;
-  width: 23rem;
-  height: 230px;
-  height: 23rem;
+  width: 160px;
+  width: 16rem;
+  height: 160px;
+  height: 16rem;
   border-radius: 50%;
-  background: linear-gradient(180deg, #3A3A3A 0%, #3A3A3A 100%);
+  background-color: #3A3A3A;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -744,10 +739,10 @@ body {
   margin: 0;
 }
 .item-tile-icon .tile-ico {
-  width: 140px;
-  width: 14rem;
-  height: 140px;
-  height: 14rem;
+  width: 120px;
+  width: 12rem;
+  height: 120px;
+  height: 12rem;
 }
 .item-tile-icon .tile-info-wrap {
   padding-left: 24px;
@@ -988,7 +983,7 @@ body {
 .elm-overlay.active {
   display: block;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .item-tile-icon .tile-ico {
     width: 14rem;
     height: 14rem;
@@ -1336,7 +1331,7 @@ body {
   -ms-flex-align: center;
       align-items: center;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .main-slider-box .h1-title {
     font-size: 4rem;
   }
@@ -1444,10 +1439,10 @@ body {
     width: 100%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .main-slider-box .slick-dots {
     left: 50%;
-    margin-left: -650px;
+    margin-left: -600px;
     padding-left: var(--paddingContainer);
   }
 }
