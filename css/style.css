@@ -1015,7 +1015,7 @@ body {
     height: auto;
   }
   .item-tile-new .tile-photo:before {
-    padding-top: 125%;
+    padding-top: 90%;
     display: block;
   }
 }

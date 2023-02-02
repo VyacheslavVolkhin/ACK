@@ -28,7 +28,7 @@ $(document).ready(function(){
             scrollTop: $(anchor.attr('href')).offset().top - 50
         }, 1000);
         e.preventDefault();
-        $('.popup-menu-wrap .js-btn-toggle').click();
+        $('.popup-menu-wrap .js-btn-toggle').removeClass('active');
         return false;
     });
 
@@ -166,7 +166,7 @@ $(document).ready(function(){
                     }
                 },
                 {
-                    breakpoint: 1024,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
                         dots: true,
