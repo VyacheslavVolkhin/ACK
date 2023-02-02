@@ -1,10 +1,14 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #fff;
+	--clr-att: #35B952;
+	--clr-att-hover: #79ff97;
+	--clr-light: #838D8F;
+    --clr-border: #838D8F;
 
 	--min: 320px;
-	--max: 1200px;
-
+	--max: 1300px;
+    
+    --paddingContainer: 15px;
 	font-size: 10px;
 }
 .sl-wrap~.sl-wrap {
@@ -13,15 +17,19 @@
 .elm-hidden {
 	display: none;
 }
+
 /* ----------------------------------- *\
 			main styles
 \* ----------------------------------- */
 body {
-	color: var(--clr-base, #000);
-	background: #fff;
+	color: var(--clr-base);
+	background: #2B2A2A;
+    font-size: 16px;
+    line-height: (24/16);
 }
-p, ul, ol {
+p, ul, ol, table, blockquote, .bq-text {
 	position: relative;
+    margin-bottom: 1.5em;
 	img {
 		max-width: 100%;
 	}
@@ -29,24 +37,83 @@ p, ul, ol {
 		margin-bottom: 0 !important;
 	}
 }
-
 li {
 	position: relative;
 }
 a {
-	text-decoration: none;
-	color: var(--clr-att, #f00);
-	&:hover {
-		text-decoration: none;
-		color: var(--clr-att, #f00);
-	}
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+        color: var(--clr-att-hover);
+    }
 }
 a.link-main, .link-main {
-	text-decoration: none;
-	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
-	}
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+.link-phone, .link-email, .elm-cnt {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--clr-base);
+    position: relative;
+    padding: 0 0 0 30px;
+    line-height: 24px;
+    transition: all ease 0.2s;
+    &:before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        background: url(../img/icons/phone.svg) center no-repeat;
+        background-size: 100% auto;
+        top: 12px;
+        left: 0;
+        margin-top: -8px;
+    }
+    .elm-ico {
+        width: 18px;
+        height: 18px;
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        margin-top: -9px;
+    }
+    .phone-prefix {
+        display: inline;
+        font-weight: 300;
+        color: var(--clr-light);
+        transition: color ease 0.2s;
+    }
+    &:hover {
+        .phone-prefix {
+            color: inherit;
+        }
+    }
+}
+.elm-cnt {
+    &:before {
+        display: none;
+    }
+}
+.link-email {
+    &:before {
+        background-image: url(../img/icons/email.svg);
+    }
+    .link-title {
+        display: inline;
+    }
+    &:hover {
+        color: var(--clr-base);
+        .link-title {
+            border-bottom: 1px solid;
+        }
+    }
+}
+.link-phone, .link-email {
+    white-space: nowrap;
 }
 h1, .h1-title,
 h2, .h2-title,
@@ -56,7 +123,101 @@ h5, .h5-title,
 h6, .h6-title {
 	display: block;
 	position: relative;
+    margin: 1em 0;
+    font-size: (20/16em);
+    line-height: (32/22);
+    font-weight: 500;
     &:first-child {
         margin-top: 0;
+    }
+}
+h1, .h1-title {
+    font-size: 4rem;
+    line-height: (66/50);
+    font-weight: 400;
+    &.title-main, .title-large {
+        font-size: 7rem;
+        line-height: (80/70);
+        font-weight: 500;
+        display: block;
+        margin: 0 0 (20/80em) 0;
+    }
+    .title-large {
+        font-size: (70/50em);
+    }
+}
+h2, .h2-title {
+    font-size: 2.5rem;
+    line-height: (40/30);
+    margin-bottom: 1em;
+    margin-top: (40/30em);
+}
+.h3-title, h3 {
+    font-weight: 500;
+    margin: (30/22em) 0 (20/22em) 0;
+}
+.title-decor {
+    padding-bottom: 0.65em;
+    position: relative;
+    &:before {
+        content: "";
+        width: 80px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--clr-att);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -40px;
+    }
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
+}
+@media (max-width: 1399px) {
+    :root {
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 1199px) {
+    :root {
+        font-size: 9px;
+    }
+}
+@media (max-width: 1023px) {
+    :root {
+        font-size: 8px;
+    }
+    h1, .h1-title {
+        font-size: 3.6rem;
+    }
+    h2, .h2-title {
+        font-size: 2.4rem;
+    }
+    .h3-title, h3 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        font-size: 7px;
+    }
+    body {
+        font-size: 14px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --paddingContainer: 30px;
+    }
+}
+@media (min-width: 1400px) {
+    :root {
     }
 }

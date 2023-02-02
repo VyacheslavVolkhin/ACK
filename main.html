@@ -9,8 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
@@ -23,23 +26,601 @@
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu js-btn-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li><a href="#section01" class="js-anchor-button">Услуги</a></li>
+                                <li><a href="#section02" class="js-anchor-button">О нас</a></li>
+                                <li><a href="#section03" class="js-anchor-button">Новости и акции</a></li>
+                                <li><a href="#section04" class="js-anchor-button">Частые вопросы</a></li>
+                                <li><a href="#section05" class="js-anchor-button">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts-inner-wrap">
+                            <div class="contacts-wrap">
+                                <div class="cnt-wrap">
+                                    <a href="tel:88512262666" class="link-phone"><span class="phone-prefix">(8512)</span> 26-26-66</a>
+                                </div>
+                                <div class="cnt-wrap">
+                                    <a href="tel:88512521999" class="link-phone"><span class="phone-prefix">(8512)</span> 52-19-99</a>
+                                </div>
+                            </div>
+                            <div class="contacts-wrap">
+                                <div class="cnt-wrap">
+                                    <a href="mailto:info@ooo-ask.ru" class="link-email"><span class="link-title">info@ooo-ask.ru</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
+        <!--main-slider-box-->
+        <div class="main-slider-box">
+            <div class="slider-wrap">
+                <div class="slider">
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <h2 class="h1-title">
+                                    <div class="title-large">Обслуживаем</div>
+                                    бюджетные и&nbsp;коммерческие организации
+                                </h2>
+                            </div>
+                            <div class="photo-inner-wrap">
+                                <img src="./img/sl01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <h2 class="h1-title">
+                                    <div class="title-large">Работаем</div>
+                                    с 2005 года
+                                </h2>
+                            </div>
+                            <div class="photo-inner-wrap">
+                                <img src="./img/sl02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <h2 class="h1-title">
+                                    <div class="title-large">Работы</div>
+                                    осуществляются удалённо либо на территории заказчика
+                                </h2>
+                            </div>
+                            <div class="photo-inner-wrap">
+                                <img src="./img/sl03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-slider-box-->
+
         <!-- page -->
-        <div class="page">
-            2222
+        <div class="page-full">
+
+            <!--tiles-box-->
+            <div class="tiles-box" id="section01">
+                <div class="title-box">
+                    <h2 class="h1-title title-decor">Услуги нашего сервисного центра</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/01.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Заправка картриджей</div>
+                                <p>Canon, HP, Samsung, Fujifilm, Epson, Xerox и другие</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/02.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Ремонт компьютерного оборудования</div>
+                                <p>Ремонт ноутбуков, ПК, периферии</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/03.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Настройка программного обеспечения</div>
+                                <p>Установка/настройка ПО, лечение вирусов</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/04.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Ремонт оргтехники</div>
+                                <p>Качественный ремонт печатной техники форматов А0-А4</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/05.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Продажа и подбор техники</div>
+                                <p>Подберём технику для ваших целей. Картриджи в наличии</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-icon">
+                            <div class="tile-ico">
+                                <img src="./img/icons/06.svg" alt="">
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title h2-title">Настройка ЭЦП, СКЗИ </div>
+                                <p>Настройка КриптоПРО, VipNET, помощь в получении ЭЦП, настройка доступа к госпорталам</p>
+                                <a href="" class="btn button-border  button-light button-small">
+                                    <span class="button-title">Цены</span>
+                                    <span class="button-ico">
+                                        <img src="./img/icons/download.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--about-box-->
+            <div class="about-box" id="section02">
+                <div class="photo-inner-wrap">
+                    <img src="./img/about.png" alt="">
+                </div>
+                <div class="info-inner-wrap">
+                    <h1 class="h1-title title-decor">О нас</h1>
+                    <h2 class="h2-title">Мы гарантируем результат и качество работ!</h2>
+                    <p>Миссией нашей компании является бесперебойная работа принтеров.</p>
+                    <p>Мы понимаем, что любые простои, задержка в подготовке документов чреваты различными неприятностями.</p>
+                    <p>Попытки самостоятельно решить вопросы связанные с ремонтом, часто приводят к тому, что техника становится не ремонтопригодной.</p>
+                    <p>В результате осмотра, инженер сообщит о возможности ремонта неисправности принтера, этапах ремонта или замены комплектующих, которые вышли из строя. Кроме того сотрудник проверит наличие расходных материалов на складе и согласовывает их стоимость.</p>
+                    <h2 class="h2-title">Нам доверяют уже более 15 лет</h2>
+                </div>
+            </div>
+            <!--/about-box-->
+
+            <!--news-slider-box-->
+            <div class="news-slider-box" id="section03">
+                <div class="title-box">
+                    <h2 class="h1-title title-decor">Новости и акции компании</h2>
+                </div>
+                <div class="slider-wrap">
+                    <div class="slider">
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new01.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Epson – лидер на рынке струйной печати и проекторов</span>
+                                    <span class="tile-text">Сегодня Epson предлагает решения как для небольших рабочих групп и обеспечения внутреннего документооборота, так и для корпораций и производств</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new02.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Новые устройства Xerox были представлены на выставке</span>
+                                    <span class="tile-text">Оборудование Xerox уже давно не “просто принтеры” или МФУ — это “умная” техника, настоящие бизнес-ассистенты</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new03.jpg" alt="">
+                                    </span>
+                                    <span class="tile-sticker">Акция</span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">При заправке 5 картриджей + 1 БЕСПЛАТНО</span>
+                                    <span class="tile-text">При заправке 5 картриджей принтеров SAMSUNG + 1 заправляем бесплатно</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new04.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Epson седьмой год подряд в списке "Топ 100 мировых новаторов"</span>
+                                    <span class="tile-text">Seiko Epson Corporation вошла в рейтинг «Топ 100 ведущих мировых новаторов 2022», составленный филадельфийской Clarivate Analytics</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new05.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Ремонт ноутбуков HP со скидкой 10%</span>
+                                    <span class="tile-text">Для всех коммерческих и бюджетных организаций скидка на ремонт и обсуживание техники HP -10%</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new01.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Epson – лидер на рынке струйной печати и проекторов</span>
+                                    <span class="tile-text">Сегодня Epson предлагает решения как для небольших рабочих групп и обеспечения внутреннего документооборота, так и для корпораций и производств</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new02.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Новые устройства Xerox были представлены на выставке</span>
+                                    <span class="tile-text">Оборудование Xerox уже давно не “просто принтеры” или МФУ — это “умная” техника, настоящие бизнес-ассистенты</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new03.jpg" alt="">
+                                    </span>
+                                    <span class="tile-sticker">Акция</span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">При заправке 5 картриджей + 1 БЕСПЛАТНО</span>
+                                    <span class="tile-text">При заправке 5 картриджей принтеров SAMSUNG + 1 заправляем бесплатно</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new04.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Epson седьмой год подряд в списке "Топ 100 мировых новаторов"</span>
+                                    <span class="tile-text">Seiko Epson Corporation вошла в рейтинг «Топ 100 ведущих мировых новаторов 2022», составленный филадельфийской Clarivate Analytics</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                        <!--sl-wrap-->
+                        <div class="sl-wrap">
+                            <a href="" class="item-tile-new">
+                                <span class="tile-photo-wrap">
+                                    <span class="tile-photo photo-cover">
+                                        <img src="./img/new05.jpg" alt="">
+                                    </span>
+                                </span>
+                                <span class="tile-info-wrap">
+                                    <span class="tile-info">21 Января 2023</span>
+                                    <span class="tile-title h3-title">Ремонт ноутбуков HP со скидкой 10%</span>
+                                    <span class="tile-text">Для всех коммерческих и бюджетных организаций скидка на ремонт и обсуживание техники HP -10%</span>
+                                </span>
+                            </a>
+                        </div>
+                        <!--/sl-wrap-->
+                    </div>
+                </div>
+            </div>
+            <!--/news-slider-box-->
+
+            <!--questions-box-->
+            <div class="questions-box" id="section04">
+                <div class="title-box">
+                    <h2 class="h1-title title-decor">Частые вопросы</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle active">Как мы проводим ремонт оргтехники?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Есть ли у нас гарантийные обязательства?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Как происходит покупка техники?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Каков уровень ваших специалистов?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Где мы проводим ремонт?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Какие сертификаты у вас есть?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Как вы подбираете технику?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Какие антивирусные пакеты программ вы используете?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-title h2-title js-btn-toggle">Предоставляете ли вы доступ к госпорталам?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Диагностика принтера – выяснение характера неисправностей и незамедлительное сообщение о них владельцу. На этом этапе оперативно решается вопрос о целесообразности ремонта как такового. Мы используем новейшие достижения техники, выполняем работы быстро и качественно</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/questions-box-->
+
+            <!--title-box-->
+            <div class="title-box" id="section05">
+                <h2 class="h1-title title-decor">Как нас найти и как связаться</h2>
+            </div>
+            <!--/title-box-->
+
+            <!--contacts-box-->
+            <div class="contacts-box">
+                <div class="map-wrap">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A41294d580ac95ef035299388619dbe0ecbfa5d4fdfcd2297e2e2eed7373239e3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts-wrap">
+                    <h3 class="h3-title cnt-title">Сервисный центр АСК</h3>
+                    <div class="cnt-wrap">
+                        <a href="tel:88512262666" class="link-phone">(8512) 26-26-66</a>
+                        <a href="tel:88512521999" class="link-phone">(8512) 52-19-99</a>
+                    </div>
+                    <div class="cnt-wrap">
+                        <div class="elm-cnt">
+                            <div class="elm-ico">
+                                <img src="./img/icons/address.svg" alt="">
+                            </div>
+                            г. Астрахань, ул. Калинина, 10
+                        </div>
+                    </div>
+                    <div class="cnt-wrap">
+                        <div class="elm-cnt">
+                            <div class="elm-ico">
+                                <img src="./img/icons/shedule.svg" alt="">
+                            </div>
+                            Пн-Пт:&nbsp&nbsp;09:00&nbsp;-&nbsp;18:00 &nbsp;&nbsp; Сб,&nbsp;Вс:&nbsp;&nbsp;выходной
+                        </div>
+                    </div>
+                    <div class="cnt-wrap">
+                        <a href="mailto:info@ooo-ask.ru" class="link-email"><span class="link-title">info@ooo-ask.ru</span></a>
+                    </div>
+                </div>
+            </div>
+            <!--/contacts-box-->
+
+            <!--form-box-->
+            <div class="form-box">
+                <div class="frm-title-wrap">
+                    <div class="frm-title h1-title">Остались вопросы?</div>
+                </div>
+                <form action="/" class="frm-wrap">
+                    <div class="frm-row">
+                        <div class="frm-field field-third">
+                            <input type="text" class="form-input" placeholder="Ваше имя" value="Константин">
+                        </div>
+                        <div class="frm-field field-third">
+                            <input type="email" class="form-input" placeholder="Ваш email" value="">
+                        </div>
+                        <div class="frm-field field-third">
+                            <input type="tel" class="form-input" placeholder="Ваш телефон" value="">
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <textarea class="form-input" placeholder="Напишите ваш вопрос здесь"></textarea>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field field-cpt">
+                            <div class="frm-field-cpt">
+                                <img src="./img/cpt.png" alt="" class="img-bg-cover">
+                            </div>
+                        </div>
+                        <div class="frm-field field-check">
+                            <div class="frm-select">
+                                <input type="checkbox" id="form" checked>
+                                <label for="form">Отправляя запрос я даю согласие на обработку своих <a href="">персональных данных</a></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <button type="submit" class="btn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--/form-box-->
+
         </div>
         <!-- /page -->
+
+
 
 
         <!-- footer -->
         <footer class="footer">
             <div class="inner-wrap">
-                333333
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-wrap">
+                    <ul class="menu">
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Новости и акции</a></li>
+                        <li><a href="">Частые вопросы</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="info-wrap">
+                    <p>© 2023 АСК Сервисный центр. Все права защищены</p>
+                    <p><a href="" class="link-main">Правовая и конфиденциальная информация</a></p>
+                </div>
             </div>
+            <a href="" class="btn-action-ico ico-arrow ico-arrow-up js-btn-up"></a>
         </footer>
         <!-- /footer -->
 
@@ -47,8 +628,8 @@
     <!-- /wrap -->
 
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.swipebox.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/scripts.js"></script>
 

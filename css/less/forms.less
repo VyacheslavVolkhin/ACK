@@ -1,28 +1,6 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
-}
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
-}
 .frm-row,
 .frm-field,
 .frm-row-submit {
@@ -31,10 +9,13 @@ input[type="submit"] {
 	position: relative;
 	line-height: 1;
 }
+.frm-field {
+    display: block;
+    width: 100%;
+}
 .frm-select {
 	position: relative;
 	display: block;
-	overflow: hidden;
     line-height: 1;
 	input {
 		display: block;
@@ -44,15 +25,54 @@ input[type="submit"] {
 		opacity: 0;
 		margin: 0;
 		padding: 0;
+        &:checked {
+            &~label {
+                &:after {
+                    opacity: 1;
+                }
+                &:before {
+                    background-color: var(--clr-att);
+                }
+            }
+        }
 	}
 	label {
 		display: block;
 		position: relative;
 		cursor: pointer;
+        padding: 0 0 0 37px;
+        line-height: 1.5;
+        color: var(--clr-light);
         &:before, &:after {
             content: "";
             display: block;
             position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 0.75em;
+            left: 10px;
+            margin: -10px 0 0 -10px;
+            border: 2px solid var(--clr-att);
+            border-radius: 3px;
+        }
+        &:after {
+            border-radius: 0;
+            border: none;
+            background: url(../img/icons/chk.svg) center no-repeat;
+            background-size: 18px auto;
+            opacity: 0;
         }
 	}
+    a {
+        &:not(:hover) {
+            color: inherit;
+        }
+    }
+}
+.frm-field-cpt {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    width: 217px;
 }
