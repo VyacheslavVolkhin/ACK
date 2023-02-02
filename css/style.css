@@ -87,7 +87,7 @@ a.link-main,
   position: absolute;
   background: url(../img/icons/phone.svg) center no-repeat;
   background-size: 100% auto;
-  top: 12px;
+  top: 11px;
   left: 0;
   margin-top: -8px;
 }
@@ -651,7 +651,7 @@ body {
         align-items: center;
   }
   .popup-menu-wrap .contacts-wrap {
-    margin-left: 5.4rem;
+    margin-left: 26px;
   }
   .popup-menu-wrap .contacts-wrap:first-child {
     margin-left: 0;
@@ -673,7 +673,7 @@ body {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .popup-menu-wrap .contacts-wrap {
-    margin-left: 30px;
+    margin-left: 15px;
   }
   .popup-menu-wrap .cnt-wrap {
     margin-left: 15px;
